@@ -1,6 +1,9 @@
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+console.log(">>>>>>>>> 모델링 호출을 시작합니다.");
+// import * as THREE from '../WB36_GG_VR_Letss_threejs/node_modules/three/build/three.module'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import Stats from 'three/examples/jsm/libs/stats.module'
+
 
 const scene = new THREE.Scene()
 scene.add(new THREE.AxesHelper(5))
