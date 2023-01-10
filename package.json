@@ -1,0 +1,24 @@
+{
+  "name": "wb36_gg_vr_letss_threejs",
+  "version": "1.0.0",
+  "description": "WB36_ 프로젝트중 AR기능 구현 코드입니다. (3D 모델링)",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubmendong/WB36_GG_VR_Letss_threejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubmendong/WB36_GG_VR_Letss_threejs/issues"
+  },
+  "homepage": "https://github.com/githubmendong/WB36_GG_VR_Letss_threejs#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "three": "^0.148.0"
+  }
+}
