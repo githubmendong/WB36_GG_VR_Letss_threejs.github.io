@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WB 연습</title>
-    <meta name="author" content="Sean Bradley" />
-    <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
-    <style>
-        body {
-            overflow: hidden;
-            margin: 0px;
+    <meta charset="UTF-8">
+    <title>이것은 연습페이지입니다.</title>
+
+    <!-- Letsee SDK -->
+    <script
+        src="https://developer.letsee.io/api/webar?key=b6cf6697f2c90f553d2d2e64e1e47ef7ef60e0ce66613ce9ea6f106efc51950a"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900|Roboto:400,700,900&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <script src='https://unpkg.com/jquery@3.5.1/dist/jquery.min.js'></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.4.11/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.4.11/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@6.4.11/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper@6.4.11/swiper-bundle.min.js"></script>
+
+    <!-- animationCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Client code -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="js/main.js"></script>
+    <style media="place" type="text/css">
+        #swiper-wrapper {
+            -letsee-target: uri('https://developer.letsee.io/api-tm/target-manager/target-uid/63b7b078eb42db40349fca33');
+            width: 460px;
+            height: 820px;
+            /*width: 124px;
+      height: 204px*/
+            ;
         }
     </style>
-    <!-- Import maps polyfill -->
-    <!-- Remove this when import maps will be widely supported -->
-    <!-- <script async src="test.js"></script> -->
-
     <script type="importmap">
             {
                 "imports": {
@@ -25,64 +48,166 @@
                 }
             }
         </script>
+    <style>
+        .animate__animated.animate__fadeInDown {
+            --animate-duration: 0.6s;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <a href="/view_source/orbitcontrols.html" id="vwSrcLink" target="_blank">&lt;&gt;</a> -->
-    <script type="module" src="api.js" defer>
-        // import * as THREE from 'three'
-        // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-        // import Stats from 'three/examples/jsm/libs/stats.module'
+    <div id="content-wrapper">
+        <div class="wrap">
+        </div>
+    </div>
+    </div>
+    <!-- Swiper -->
+    <div id="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-item">
+                <div id="productInfoAR">
+                    <div class="title">Cicapair Calming Mask</div>
+                    <div class="tag">#urgent calming mask</div>
+                    <div class="price">$17.25</div>
+                </div>
+                <div id="productVideoAR">
+                    <video playsinline controls autoplay muted loop>
+                        <source src="asset/product_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- /////////////////////////////  2번째 폼 -->
+            <div class="swiper-slide swiper-item">
+                <div id="content01AR">
+                    <div id="contentHeader">
+                        <p class="subtitle">웬디컷건물</p>
+                        <p class="mainTitle">ENDICOTT BUILDING</p>
+                        <p class="point"><span>3</span> 층</p>
+                        <div>
+                            <p class="title" style="
+              color:white;
+              padding-top: 250px;
+              padding-bottom: 20px;
+              padding-left: 20px;
+          ">
+                                Anti ti ti ti fragile fragile<br>
+                                Anti ti ti ti fragile<br>
+                                Anti ti ti ti fragile fragile
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="content03AR">
 
-        // const scene = new THREE.Scene()
-        // scene.add(new THREE.AxesHelper(5))
+                </div>
+            </div>
+            <div class="swiper-slide swiper-item">
+                <div id="productRatingAR">
+                    <div class="ratePoint"><span>4.9</span></div>
+                    <div class="rateStar"><span class="star">★★★★★</span></div>
+                    <div class="rateCount">
+                        <span class="label">total review - </span><span class="count">72</span>
+                    </div>
+                </div>
+                <div id="reviewContentAR" class="reviewContent">
+                    <div class="hide-ar reviewHeader">
+                        <p class="reviewStart">
+                            <span>평점</span>
+                            ★★★★★
+                        </p>
+                    </div>
+                    <div class="reviewImage">
+                        <img src="asset/review_photo-01.png">
+                    </div>
+                    <div class="reviewText">
+                        <p class="title">After all Shika<br>
+                            I think the doctor is the truth</p>
+                        <div class="bodyDiv">
+                            <p class="body">
+                                In particular, as soon as I apply it, I feel soothing while wrapping my skin. The area
+                                around the ball
+                                is
+                                exceptionally sensitive, but after using it a few times, it seems to calm down quickly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviewFooter hide-ar">
+                        <span class="reviewId">ari****</span>
+                        <span class="reviewDate">2019.10.20</span>
+                    </div>
+                </div>
+                <div id="relatedProductAR">
+                    <div id="swiper-related-product-ar">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <p class="title">Related Product</p>
+                                    <div class="product cf">
+                                        <div class="inner">
+                                            <img src="asset/related-product.png">
+                                            <div class="relatedInfo">
+                                                <p class="name">Dermask Ultra Jet <br>Feeling solution</p>
+                                                <p class="tag">#Feeling Solution Mask</p>
+                                                <p class="price">25,000won</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <p class="title">Related Product</p>
+                                    <div class="product cf">
+                                        <div class="inner">
+                                            <img src="asset/related-product-black.png">
+                                            <div class="relatedInfo">
+                                                <p class="name">Dermask Ultra Jet <br>Porecting Solution</p>
+                                                <p class="tag">#The Pore Solution Mask</p>
+                                                <p class="price">20,000won</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
 
-        // const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        // camera.position.z = 2
+        <div class="swiper-pagenation"></div>
+    </div>
 
-        // const renderer = new THREE.WebGLRenderer()
-        // renderer.setSize(window.innerWidth, window.innerHeight)
-        // document.body.appendChild(renderer.domElement)
+    <script>
 
-        // const controls = new OrbitControls(camera, renderer.domElement)
+        letsee.ready(() => {
+            letsee.start();
 
-        // controls.listenToKeyEvents(document.body)
+            letsee.addTarget('https://developer.letsee.io/api-tm/target-manager/target-uid/63b7b078eb42db40349fca33')
+                .then(entity => {
+                    const helloWorldElem = document.createElement('div');
+                    helloWorldElem.innerHTML = 'Hello world!';
+                    const xrElement = letsee.createXRElement(helloWorldElem);
+                    letsee.bindXRElement(xrElement, entity);
+                });
+            setTimeout(() => {
+                initApp();
+            }, 5000)
 
-        // const geometry = new THREE.BoxGeometry()
-        // const material = new THREE.MeshBasicMaterial({
-        //     color: 0x00ff00,
-        //     wireframe: true,
-        // })
+            letsee.onTrackStart(() => {
+            });
+            letsee.onTrackEnd(() => {
+            });
+            letsee.onTrackMove(() => {
+            });
 
-        // const cube = new THREE.Mesh(geometry, material)
-        // scene.add(cube)
 
-        // window.addEventListener('resize', onWindowResize, false)
-        // function onWindowResize() {
-        //     camera.aspect = window.innerWidth / window.innerHeight
-        //     camera.updateProjectionMatrix()
-        //     renderer.setSize(window.innerWidth, window.innerHeight)
-        //     render()
-        // }
+        });
 
-        // const stats = Stats()
-        // document.body.appendChild(stats.dom)
+        letsee.init();
 
-        // function animate() {
-        //     requestAnimationFrame(animate)
-
-        //     // controls.update()
-
-        //     render()
-
-        //     stats.update()
-        // }
-
-        // function render() {
-        //     renderer.render(scene, camera)
-        // }
-
-        // animate()
     </script>
+
 </body>
 </html>

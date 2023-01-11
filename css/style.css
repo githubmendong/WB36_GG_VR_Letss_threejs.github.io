@@ -1,0 +1,446 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.2;
+  box-sizing: border-box;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content: "";
+  display: block;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  zoom: 1;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.hide-web {
+  display: none !important;
+}
+
+/*#fallback-test.ar-mode-on .ar-renderer .hide-ar {
+  display: none !important;
+}
+#fallback-test.ar-mode-on .ar-renderer .hide-web {
+  display: block !important;
+}
+#fallback-test.ar-mode-on .ar-renderer img {
+  display: block;
+  width: 100%;
+}
+#fallback-test.ar-mode-on .ar-renderer #productBanner {
+  width: 194px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productInfo {
+  width: 400px;
+  height: 330px;
+  padding: 39px 41px;
+  text-align: left;
+  background-image: url("../asset/bg-product-top.png");
+  background-size: cover;
+  border-radius: 8px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productInfo .title {
+  color: white;
+  font-weight: 700;
+  font-size: 34px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productInfo .tag {
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 10px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productInfo .price {
+  color: white;
+  font-weight: 700;
+  font-size: 65px;
+  margin-top: 40px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productInfo .price:after {
+  color: white;
+  display: block;
+  content: "25g / 0.9oz x 5EA";
+  font-size: 12px;
+  margin-top: 15px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating {
+  width: 400px;
+  height: 250px;
+  padding: 21px 32px;
+  border-radius: 7px;
+  border: solid 2px white;
+  background-color: rgba(242, 242, 242, 0.9);
+  position: relative;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating #ratePoint {
+  float: left;
+  width: 150px;
+  color: black;
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 14px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating #ratePoint:before {
+  font-size: 20px;
+  font-weight: bold;
+  content: "리뷰평점";
+  display: block;
+  padding-bottom: 10px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating #rateStar {
+  width: 150px;
+  margin: 20px 15px 0 0;
+  float: right;
+  font-size: 34px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating #rateStar:before {
+  font-size: 16px;
+  content: "99%의 구매자들이 \a이 상품을 좋아합니다.";
+  display: block;
+  white-space: pre;
+  margin-bottom: 8px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating #rateCount {
+  display: none;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating > div {
+  color: black;
+}
+#fallback-test.ar-mode-on .ar-renderer #productRating:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 430px;
+  height: 235px;
+  border-radius: 7px;
+  border: solid 1px rgba(0, 0, 0, 0.17);
+}
+#fallback-test.ar-mode-on .ar-renderer #productVideo {
+  width: 400px;
+}
+#fallback-test.ar-mode-on .ar-renderer #productVideo video {
+  width: 100%;
+  border-radius: 8px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content03 {
+  background-image: url("../asset/bg-content-03.png");
+  background-size: cover;
+  width: 400px;
+  height: 220px;
+  padding: 52px 46px;
+  border-radius: 8px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content03 p {
+  color: #fff;
+}
+#fallback-test.ar-mode-on .ar-renderer #content03 .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.4;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 {
+  border-radius: 8px;
+  background-color: rgba(9, 16, 13, 0.9);
+  width: 400px;
+  padding: 5px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div {
+  float: left;
+  width: 185px;
+  height: 185px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 30px;
+  position: relative;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div p {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div.titleContent {
+  background-color: rgba(9, 16, 13, 0.9);
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div.titleContent .subtitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div.titleContent .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00a030;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div.titleContent .point {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div.titleContent .point span {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:before {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  font-size: 10px;
+  font-weight: 900;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(1):before {
+  content: "String CICA";
+  color: white;
+  display: block;
+  padding-left: 23px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(2):before {
+  color: black;
+  content: "01";
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url("../asset/plus.png");
+  background-size: cover;
+  margin-top: 30px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(3):before {
+  color: black;
+  content: "02";
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(3):after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 76px;
+  background-image: url("../asset/bottle.png");
+  background-size: cover;
+  margin-top: 19px;
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(4):before {
+  color: black;
+  content: "03";
+}
+#fallback-test.ar-mode-on .ar-renderer #content01 > div:nth-child(4):after {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-image: url("../asset/skin.png");
+  background-size: cover;
+  margin-top: 30px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 450px;
+  border-radius: 8px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap {
+  padding: 20px 0px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .title {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 0 20px 20px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li .inner img {
+  float: left;
+  width: 80px;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li .inner .relatedInfo {
+  width: calc(100% - 90px);
+  float: right;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li .inner .relatedInfo .name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li .inner .relatedInfo .tag {
+  font-size: 10px;
+  margin-bottom: 17px;
+  color: #9e9e9e;
+}
+#fallback-test.ar-mode-on .ar-renderer #relatedProduct .wrap .product ul li .inner .relatedInfo .price {
+  font-size: 12px;
+  color: black;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent {
+  width: 355px;
+  height: 170px;
+  border-radius: 8px;
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 400;
+  padding: 25px;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewHeader {
+  display: none;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewImage {
+  float: left;
+  padding-bottom: 14px;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewImage img {
+  display: block;
+  width: 113px;
+  border: solid 1px #707070;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewText {
+  float: right;
+  width: 160px;
+  padding-bottom: 14px;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewText .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c2c2c;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewText .bodyDiv {
+  height: 64px;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewText .body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  !* Line Count *!
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.3em;
+  height: 3.9em;
+  !* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em *!
+  margin-top: 3px;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+#fallback-test.ar-mode-on .ar-renderer #reviewContent .reviewFooter {
+  display: none;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #arBtn {
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  z-index: 300;
+  width: 150px;
+  left: unset !important;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #arBtn .to-ar {
+  display: none !important;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #arBtn .to-web {
+  display: block !important;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #openNav {
+  position: fixed;
+  z-index: 300;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #cartBtn {
+  position: fixed;
+  border: 1px solid #000;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #cartBtn #buyBtn {
+  width: 100%;
+  background: #fff;
+  color: #000;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #cartBtn #wishList {
+  display: none;
+}
+#fallback-test.ar-mode-on .ar-renderer #fallback-test.ar-mode-on #productBanner {
+  display: block;
+}*/
